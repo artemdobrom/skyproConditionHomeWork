@@ -10,6 +10,11 @@ public class Main {
         task5();
         task6();
         task7();
+        task11();
+        task12();
+        task13();
+        task14();
+        task15();
     }
 
     public static void task1() {
@@ -131,6 +136,102 @@ public class Main {
 
 
     }
+    public static void task11() {
+        System.out.println("Задача 1");
+
+        int clientOS = 0;
+
+        if ( clientOS== 0) {
+            System.out.println("Установите  версию приложения для iOS по ссылке");
+        } else if (clientOS==1 ) {
+            System.out.println("Установите  версию приложения для Android по ссылке");
+        }else {
+            System.out.println("Некорректные данные");
+        }
+    }
+    public static void task12() {
+        System.out.println("Задача 2");
+
+        int clientOS = 1;
+        int year= 2014;
+
+        if ( clientOS== 0 && year >=2015) {
+            System.out.println("Установите  версию приложения для iOS по ссылке");
+        } else if (clientOS==0 && year<=2015 ) {
+            System.out.println("Установите облегчённыу версию приложения для iOS по ссылке");
+        } else if (clientOS==1 && year>=2015 ) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else if (clientOS==1 && year<=2015 ) {
+            System.out.println("Установите облегчённыу версию приложения для Android по ссылке");
+        }else {
+            System.out.println("Некорректные данные");
+        }
+    }
+
+
+    public static void task13() {
+        System.out.println("Задача 3");
+
+        int year = 2021;
+
+        if ( year % 4 == 0 && year % 100 !=0 || year % 400==0) {
+            System.out.println( year + " год является высококсным");
+        }else {
+            System.out.println(" год не является высокосным");
+        }
+    }
+
+    public static void task14() {
+        System.out.println("Задача 4");
+
+        int distantion = 21;
+        int day= 1;
+
+        if ( distantion<= 20) {
+            System.out.println("Потребуется дней: "+ day);
+        } else if (distantion >=20 & distantion <=60 ) {
+            System.out.println("Потребуется дней: "+ (day+ 1) );
+        } else if (distantion >=60 & distantion <=100 ) {
+            System.out.println("Потребуется дней: "+ (day+1+1) );
+        }else {
+            System.out.println("Доставки нет");
+        }
+    }
+
+    public static void task15() {
+        System.out.println("Задача 5");
+
+        int monthNumber= 12;
+
+        if (monthNumber >12) {
+            System.out.println("Некорректный номер!");
+        }
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:
+                System.out.println("Некорректный месяц");
+        }
+
+        }
 
 
 }
